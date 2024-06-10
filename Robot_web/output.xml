@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240522 18:41:06.982" rpa="false" schemaversion="4">
+<suite id="s1" name="Client" source="C:\Users\mb_la\OneDrive\Documentos\robot-web\Client">
+<suite id="s1-s1" name="Index" source="C:\Users\mb_la\OneDrive\Documentos\robot-web\Client\index.robot">
+<test id="s1-s1-t1" name="CT: Logar com sucesso" line="6">
+<kw name="CT: Login com sucesso" library="login">
+<kw name="Dado que usuário esteja na home" library="login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240522 18:41:08.318" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20240522 18:41:08.319" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240522 18:41:08.320" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<status status="FAIL" starttime="20240522 18:41:08.316" endtime="20240522 18:41:08.379"/>
+</kw>
+<kw name="Maximize Browser Windows">
+<status status="NOT RUN" starttime="20240522 18:41:08.388" endtime="20240522 18:41:08.388"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240522 18:41:08.388" endtime="20240522 18:41:08.389"/>
+</kw>
+<status status="FAIL" starttime="20240522 18:41:08.312" endtime="20240522 18:41:08.390"/>
+</kw>
+<kw name="Quando informar credenciais válidas" library="login">
+<status status="NOT RUN" starttime="20240522 18:41:08.392" endtime="20240522 18:41:08.392"/>
+</kw>
+<kw name="Então realizará login com sucesso" library="login">
+<status status="NOT RUN" starttime="20240522 18:41:08.392" endtime="20240522 18:41:08.392"/>
+</kw>
+<status status="FAIL" starttime="20240522 18:41:08.311" endtime="20240522 18:41:08.393"/>
+</kw>
+<status status="FAIL" starttime="20240522 18:41:08.302" endtime="20240522 18:41:08.394">NoSuchDriverException: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" starttime="20240522 18:41:07.067" endtime="20240522 18:41:08.444"/>
+</suite>
+<status status="FAIL" starttime="20240522 18:41:06.986" endtime="20240522 18:41:08.499"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Client">Client</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Index">Client.Index</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
