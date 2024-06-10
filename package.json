@@ -1,0 +1,12 @@
+{
+  "name": "mb_robot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "appium": "adb kill-server && adb start-server && appium --port 4723 --base-path /wd/hub"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
